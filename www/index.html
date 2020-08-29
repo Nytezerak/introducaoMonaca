@@ -30,9 +30,9 @@
         </div>
         <div id="genero" class="col-6">
           Selecione seu gênero:
-          <input type="radio" id="male" name="gender" value="male">
+          <input type="radio" id="gender" name="gender" value="m">
           <label for="male">Masculino</label><br>
-          <input type="radio" id="female" name="gender" value="female">
+          <input type="radio" id="gender" name="gender" value="f">
           <label for="female">Feminino</label><br>
         </div>
     </div>
@@ -49,11 +49,21 @@
         <label for="idade">Idade</label>
         <input type="text" id="idade" name="idade">
     </div>
+    <div class="col-12 form-group text-center">      
+        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+               <option selected>Taxa de Atividade</option>
+							<option value="1.2">Sedentário</option>
+							<option value="1.375">Levemente Ativo</option>
+							<option value="1.55">Moderadamente Ativo</option>
+              <option value="1.725">Altamente Ativo</option>
+              <option value="1.9">Extremamente Ativo</option>
+						</select><br>
+    </div>
     </div>
     <div class="row">
         <div class="col-12">
           <div class="form-group">
-            <button class="btn btn-primary btn-block">Calcular</button>
+            <button id="calc" class="btn btn-primary btn-block">Calcular</button>
           </div>
         </div>
     <div class="col-12">
